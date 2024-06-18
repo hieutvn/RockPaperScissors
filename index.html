@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section id="game-wrapper">
+        <!-- GAME CANVAS -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- ACTIONS FOR ROCK, PAPER, SCISSORS-->
+        <div id="action-bar">
+            <button class="action" id="rock">R</button>
+            <button class="action" id="paper">P</button>
+            <button class="action" id="scissors">S</button>
+        </div>
+
+
+        <section id="lifebar-section">
+
+            <!-- PLAYER LIFEBAR -->
+            <div class="lifebar-content" id="active_player-lifebar-content">
+                
+                <div class="profile" id="active_player-profile">
+                <!-- <canvas id="player_profilePicture"></canvas> -->
+                </div>
+
+                <div class="lifebar-wrapper-content">
+
+                    <span class="name-tag">SAMURAI MACK</span>
+                    <div class="lifebar-wrapper">
+                        <div class="lifebar" id="active_player-lifebar"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- COMPUTER LIFEBAR -->
+            <div class="lifebar-content" id="computer-lifebar-content">
+                
+                <div class="profile" id="computer-profile">
+                <!-- <canvas id="player_profilePicture"></canvas> -->
+                </div>
+
+                <div class="lifebar-wrapper-content">
+                    <span class="name-tag">SAMURAI KENJI</span>
+                    <div class="lifebar-wrapper">
+                        <div class="lifebar" id="computer-lifebar"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/gamelogic.js"></script>
+</body>
+</html>
